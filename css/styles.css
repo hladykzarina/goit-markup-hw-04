@@ -146,6 +146,11 @@ ul {
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
+  background-image: url(../images/background-image/hero-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
 }
 
 .header-hero {
@@ -207,6 +212,9 @@ ul {
   margin-bottom: 8px;
 }
 
+.features-icons {
+}
+
 .features-list-item {
   width: calc((100% - 72px) / 4);
 }
@@ -256,6 +264,9 @@ ul {
 .team-members {
   background-color: #f4f4fd;
   padding: 120px 0;
+}
+
+.team-members-icons {
 }
 
 .team-members-header {
@@ -325,6 +336,15 @@ ul {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+}
+
+.social-media {
+}
+
+.social-media-uppertitle {
+}
+
+.social-media-footer {
 }
 
 .logo-footer {
@@ -398,6 +418,8 @@ ul {
   color: #ffffff;
   background-color: #404bbf;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .images-portfolio {
@@ -413,6 +435,11 @@ ul {
 
 .item-img {
   width: calc((100% - 48px) / 3);
+}
+
+.item-img:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .img-name {
@@ -449,4 +476,16 @@ ul {
   color: #434455;
   flex: none;
   order: 1;
+}
+
+.customers-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
