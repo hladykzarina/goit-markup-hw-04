@@ -151,6 +151,7 @@ ul {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header-hero {
@@ -339,12 +340,18 @@ ul {
 }
 
 .social-media {
+  display: flex;
 }
 
 .social-media-uppertitle {
-}
-
-.social-media-footer {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  display: flex;
 }
 
 .logo-footer {
@@ -437,7 +444,11 @@ ul {
   width: calc((100% - 48px) / 3);
 }
 
-.item-img:hover {
+.img-link {
+  display: block;
+}
+
+.img-link:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
