@@ -39,6 +39,8 @@ ul {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -146,7 +148,11 @@ ul {
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
-  background-image: url(../images/background-image/hero-image.png);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/background-image/hero-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -163,9 +169,6 @@ ul {
   max-width: 496px;
   margin: 0 auto;
   margin-bottom: 48px;
-}
-
-.logo-navigation {
 }
 
 .button-main {
@@ -218,6 +221,10 @@ ul {
   height: 112px;
   background: #f4f4fd;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 
 .features-icon {
@@ -277,16 +284,33 @@ ul {
 }
 
 .team-icons {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 
 .team-icons-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 24px;
+}
+
+.team-icons-item {
+  width: 40px;
+  height: 40px;
+}
+
+.team-icons-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-icons-link:hover,
+.team-icons-link:focus {
+  background-color: #404bbf;
 }
 
 .team-social-icons {
@@ -363,19 +387,53 @@ ul {
   padding: 100px 0;
 }
 
-.social-media {
-  display: flex;
-}
-
 .social-media-uppertitle {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-container {
   display: flex;
+  align-items: baseline;
+}
+
+.social-media {
+  margin-right: 120px;
+}
+
+.social-icon-footer {
+  display: flex;
+  gap: 16px;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #31d0aa;
+}
+
+.social-footer {
+  fill: #f4f4fd;
 }
 
 .logo-footer {
@@ -472,7 +530,8 @@ ul {
   display: block;
 }
 
-.img-link:hover {
+.img-link:hover,
+.img-link:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -513,14 +572,51 @@ ul {
   order: 1;
 }
 
+.section-customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .customers-title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.customers-icon-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
+.customers-icon-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+
+.customers-icon-link:hover,
+.customers-icon-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+
+.icon-customers {
+  fill: currentColor;
 }
