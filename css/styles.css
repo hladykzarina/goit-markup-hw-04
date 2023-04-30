@@ -39,7 +39,7 @@ ul {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -152,7 +152,7 @@ ul {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background-image/hero-image.png);
+    url(../images/background-image/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -289,6 +289,10 @@ ul {
   gap: 24px;
 }
 
+.team-icons-container {
+  padding: 32px 0;
+}
+
 .team-icons-item {
   width: 40px;
   height: 40px;
@@ -383,6 +387,10 @@ ul {
   padding: 100px 0;
 }
 
+.footer-title {
+  margin-right: 120px;
+}
+
 .social-media-uppertitle {
   font-family: 'Roboto';
   font-style: normal;
@@ -397,10 +405,6 @@ ul {
 .footer-container {
   display: flex;
   align-items: baseline;
-}
-
-.social-media {
-  margin-right: 120px;
 }
 
 .social-icon-footer {
