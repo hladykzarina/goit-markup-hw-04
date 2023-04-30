@@ -214,6 +214,15 @@ ul {
 }
 
 .features-icons {
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
+
+.features-icon {
+  display: flex;
+  align-items: center;
 }
 
 .features-list-item {
@@ -267,7 +276,21 @@ ul {
   padding: 120px 0;
 }
 
-.team-members-icons {
+.team-icons {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+}
+
+.team-icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.team-social-icons {
+  fill: #f4f4fd;
 }
 
 .team-members-header {
@@ -332,6 +355,7 @@ ul {
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin-bottom: 8px;
 }
 
 .footer {
